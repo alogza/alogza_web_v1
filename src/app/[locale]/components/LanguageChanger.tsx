@@ -33,8 +33,9 @@ export default function LanguageChanger() {
     const date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     const expires = date.toUTCString();
-    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
-
+    const isProd = typeof window !== "undefined" && window.location.hostname.endsWith("alogza.com");
+    const domain = isProd ? ";domain=.alogza.com" : "";
+    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/${domain}`;
     // Update locale in URL
     const segments = pathname.split("/");
     if (i18nConfig.locales.includes(segments[1])) {

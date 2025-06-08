@@ -3,14 +3,13 @@ import Header from "./components/Header";
 import "./globals.css";
 import ViewCanvas from "./components/ViewCanvas";
 import Footer from "./components/Footer";
-import { getHTMLTextDir } from "intlayer";
-import { NextLayoutIntlayer } from "next-intlayer";
 import initTranslations from "../i18n";
 import TranslationsProvider from "./components/TranslationsProvider";
 import { SuspenseLayout } from "./components/SuspenseLayout";
 import { Suspense } from "react";
+import { ReactNode } from "react";
+import { getHTMLTextDir } from "@/utils/getHTMLTextDir";
 
-export { generateStaticParams } from "next-intlayer";
 
 const alogza = localFont({
   src: "../../../public/fonts/Azonix.otf",
@@ -27,9 +26,18 @@ const inter = localFont({
 
 const namespaces = ["content"];
 
-import LoadingOverlay from "./components/LoadingOverlay";
+export const metadata ={
+  title:"Alogza Official",
+  icon:"/logo.png"
+  
+}
 
-const LocalLayout: NextLayoutIntlayer = async ({ children, params }) => {
+import LoadingOverlay from "./components/LoadingOverlay";
+interface LocalLayoutProps {
+  children: ReactNode;
+  params: { locale: string };
+}
+const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
   const { locale } = await params;
   const { t, resources } = await initTranslations(locale, namespaces);
   return (

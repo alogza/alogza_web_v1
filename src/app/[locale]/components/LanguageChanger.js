@@ -19,6 +19,13 @@ function LanguageChangerContent() {
   const router = useRouter();
   const currentPathname = usePathname();
 
+  function getPathWithLocale(pathname, locale) {
+    // Assumes path is like /en/..., /ar/...
+    const segments = pathname.split("/");
+    segments[1] = locale; // Replace the locale segment
+    return segments.join("/") || "/";
+  }
+
   return (
     <div>
       {i18nConfig.locales.map((locale) => (
@@ -26,7 +33,8 @@ function LanguageChangerContent() {
           key={locale}
           onClick={() => {
             i18n.changeLanguage(locale);
-            router.push(currentPathname, currentPathname, { locale });
+            const newPath = getPathWithLocale(currentPathname, locale);
+            router.replace(newPath);
           }}
           disabled={locale === currentLocale}
         >
