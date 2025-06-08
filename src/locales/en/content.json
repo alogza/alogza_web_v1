@@ -1,0 +1,981 @@
+{
+  "header": {
+    "logoAlt": "Alogza Logo",
+    "nav": ["Home", "Services", "Projects", "About Us", "Contact"],
+    "appointment": "Appointment"
+  },
+
+    "home": {
+    "hero": {
+      "discover": "Discover ALOGZA",
+      "new":"NEW",
+      "title1": "Boost Your",
+      "title2": "Business with",
+      "subtitle": "Discover innovative solutions for websites, mobile apps, AI technologies, video games, graphic design, and marketing — all in one place.",
+      "follow":"Follow us on",
+      "button": {
+        "label": "Have a look at our Company Profile Booklet",
+        "download": "Download",
+        "follow":"Follow us on"
+
+      }
+    },
+    "whyUs": {
+      "title": "Why Choose Us?",
+      "section1": {
+        "title": "Innovative Solutions Tailored to Your Needs",
+        "content": "At Alogza, we blend cutting edge technology with creative expertise to deliver custom solutions aligned with your business goals. Whether it’s websites, mobile apps, AI chatbots, game development, or graphic design, we deliver top-tier results that give you a competitive edge."
+      },
+      "section2": {
+        "title": "Experienced Team with a Passion for Excellence",
+        "content": "Our team is made up of highly skilled professionals with extensive experience in IT, web and mobile development, and AI powered solutions. We are committed to deliver high quality projects focused on performance, usability, and innovation."
+      }
+    },
+    "services": {
+      "heading": {
+        "title": "Our Services",
+        "description": "At Alogza, we provide cutting edge digital solutions to elevate your brand and enhance user experience. Our expertise spans across multiple domains, ensuring high quality results that drive success.",
+        "readMore ": "Read More"
+
+      },
+      "webDevelopment": {
+        "title": "Modern Web Development",
+        "description": "A well developed website is the foundation of your online presence...",
+        "points": [
+          "Custom Web Applications",
+          "SEO & Performance Optimization",
+          "Mobile Friendly & Responsive Design",
+          "Scalable & Secure",
+          "Content Management System (CMS)"
+        ]
+      },
+      "mobileApps": {
+        "title": "Mobile App Development",
+        "description": "From iOS to Android and cross-platform applications...",
+        "points": [
+          "iOS & Android Development",
+          "Intuitive UX/UI Design",
+          "API & Third-Party Integrations",
+          "Scalable & Secure"
+        ]
+      },
+      "chatbots": {
+        "title": "AI Powered Agents",
+        "description": "Smart AI-powered agents that transform customer service by delivering realtime support, automating business tasks, and ensuring meaningful, humanlike interactions....",
+        "points": [
+          "24/7 Intelligent Assistance",
+          "Hyper-Personalized Chatbots",
+          "Lead Generation & Sales Automation",
+          "Seamless Integration Across Platforms"
+        ]
+      },
+      "games": {
+        "title": "Game Development",
+        "description": "We specialize in immersive and interactive game development...",
+        "points": [
+          "AI Driven integrations & Smart Interactions",
+          "Cross Platform Compatibility",
+          "2D & 3D Game Development",
+          "AR/VR Integration"
+        ]
+      },
+      "consultancy": {
+        "title": "IT Consultancy",
+        "description": "We provide expert IT consulting services to help businesses...",
+        "points": [
+          "Business Process Optimization",
+          "Cloud & Infrastructure Consulting",
+          "Cybersecurity & Data Protection",
+          "Digital Transformation Strategy"
+        ]
+      },
+      "uxui": {
+        "title": "Graphic Design",
+        "description": "Great design goes beyond looks, it's about building intuitive, engaging experiences that leave a lasting impression....",
+        "points": [
+          "Logo & Brand Identity Design",
+          "UI/UX Design",
+          "Business Cards & Stationery",
+          "Brand Guidelines & Design Systems"
+        ]
+      }
+    },
+    "projects": {
+      "heading": "Our Projects",
+      "ViewAllProjects": "View All Projects",
+
+      "items": {
+        "ai": "AI Projects",
+        "sfaChatbot": "Mobile Chatbot – Intelligent Data Insights",
+        "aiChatbot": "AI Chatbot – Custom Portal to Intelligent Conversations",
+        "digitalExperience": "A Seamless Digital Experience for Businesses",
+        "sfaApp": "Sales App – Empowering Sales Teams with Smart Insights",
+        "webApps": "Web & APP Projects",
+        "games": "Game Development",
+        "amaze": "Amaze Venture – An AI-Powered 3D Gaming Experience",
+        "readMore": "Read More"
+      }
+    },
+    "contact": {
+      "heading": "Reach Out to Build What’s Next",
+      "description": "Building the next big thing starts with a simple connection.",
+      "form": {
+        "lastName": "Last Name",
+        "firstName": "First Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "submit": "Send",
+        "submiting": "Sending...",
+        "success": "Your message has been sent successfully!"
+
+      }
+    }
+  },
+
+  "projectsPage": {
+    "viewProject":"View Project",
+    "projectsFound":"Projects Found",
+    "relatedProjects": "Related Projects",
+    "title": "Made with Precision by",
+    "subtitle": "We present to you a selection of our outstanding projects that reflect our expertise, innovation, and commitment to delivering high-quality tech solutions.",
+    "searchPlaceholder": "Search projects...",
+    "filters": ["AI Projects", "Web & APP Projects", "Game Development"],
+    "projects": {
+      "sfa" : {
+        "title": "AI Mobile Chatbot - Intelligent Data Insights",
+        "tag": "AI Projects",
+        "description": "Sales Chatbot is designed to streamline business operations by providing instant, data-driven responses."
+      },
+      "aichatbot":{
+        "title": "AI Chatbot - Custom Portal to Intelligent Conversations",
+        "tag": "AI Projects",
+        "description": "AI Chatbot is designed to provide a seamless and intuitive experience, offering users a personalized gateway to advanced AI capabilities."
+      },
+      "isianpadu":{
+        "title": "Company Website - A Seamless Digital Experience for Businesses",
+        "tag": "Web & APP Projects",
+        "description": "We created a modern and user-friendly website designed to enhance accessibility, streamline information, and showcase essential services."
+      },
+      "sfaapp":{
+        "title": "Sales App - Empowering Sales Teams with Smart Insights",
+        "tag": "Web & APP Projects",
+        "description": "Sales App is a powerful tool designed to enhance the efficiency of sales teams by providing real-time access to crucial business data."
+      },
+      "sfaweb":{
+        "title": "Company Product website - Showcasing Innovation and Booking list",
+        "tag": "Web & APP Projects",
+        "description": "This official website was developed for Business Company to showcase its flagship product."
+      },
+      "certificate":{
+        "title": "Automated Certificate Generation – Seamless & Efficient Digital Certification",
+        "tag": "Web & APP Projects",
+        "description": "This Automated Certificate Generation system simplifies the process of issuing certificates by automating the customization, storage, and delivery of certificates in PDF format."
+      },
+      "amazeventure":{
+        "title": "Amaze Venture – An AI Powered 3D Gaming Experience",
+        "tag": "Game Development",
+        "description": "Amaze Venture is a dynamic 3D video game that blends AI-driven NPCs, voice recognition, and interactive challenges to create an engaging player experience."
+      }
+    },
+    "sfa_mobile_app": {
+      "title": "Sales App - Empowering Sales Teams with Smart Insights",
+      "overview": "The Sales App is a mobile  tool that helps teams manage tenders, track performance, and access reports in real-time. With features like dynamic dashboards, exportable tables, and an AI chatbot, it supports fast, informed decision making—anytime, anywhere.",
+      "key_features": {
+        "target_performance": {
+          "title": "Target Performance Indicators",
+          "description": "Speedometer-style visuals display performance against sales targets monthly, yearly, and multi-year. Real-time data integration helps users evaluate progress with clear percentage and monetary insights."
+        },
+        "exportable_reports": {
+          "title": "Exportable Reports",
+          "description": "Tender data can be exported in PDF, Excel, and CSV formats for reporting, analysis, and documentation."
+        },
+        "calendar_event_planner": {
+          "title": "Integrated Calendar & Event Planner",
+          "description": "A built-in calendar lets users view and manage key events or deadlines."
+        },
+        "ai_chatbot": {
+          "title": "AI Chatbot Integration",
+          "description": "An AI-powered chatbot can be integrated to handle natural language queries and provide instant responses based on system database."
+        },
+        "responsive_tables": {
+          "title": "Responsive and Flexible Tables",
+          "description": "Tables are built to be fully responsive and adaptable to mobile screens, ensuring smooth interaction, sorting, and viewing across devices without compromising readability or usability."
+        }
+      },
+      "benefits": [
+        "Quick Insights – Visual charts and KPIs show real-time sales progress.",
+        "Mobile Access – Responsive design supports use on any device.",
+        "Easy Reporting – Data can be exported in PDF, Excel, or CSV.",
+        "Smart Search – Tables include search, sort, and filter functions.",
+        "Timely Alerts – Calendar and event tools reduce missed deadlines.",
+        "AI Support – Chatbot answers data questions instantly.",
+        "Secure Access – Login and role-based views keep data safe."
+      ],
+      "conclusion": "This all-in-one dashboard system is perfect for sales teams, SMEs, and enterprise managers seeking real-time insights, automated reporting, AI support, and mobile-friendly tools to boost productivity, reduce errors, and make smarter decisions—anytime, anywhere."
+    },
+    "ai_chatbot_portal": {
+      "title": "AI Chatbot – Custom Portal to Intelligent Conversations",
+      "overview_title": "Overview",
+      "overview": "This AI Chatbot serves as a custom portal to advanced AI capabilities, offering businesses a personalized and interactive communication tool. Whether for customer support, automated workflows, or knowledge retrieval, the chatbot adapts to different industries, delivering seamless and engaging experiences.",
+      "features_title": "Key Features",
+      "features": {
+        "model_selection": {
+          "title": "Choose Your AI Model",
+          "desc": "Select from different AI models (e.g., GPT-4 mini, GPT-4) based on performance, response quality, and efficiency. This allows users to optimize their chatbot experience according to their needs."
+        },
+        "prompt_generator": {
+          "title": "Prompt Generator",
+          "desc": "This tool refines and improves user-entered prompts, ensuring that the AI understands queries better and provides more relevant responses."
+        },
+        "conversation_access": {
+          "title": "Access Previous Conversations",
+          "desc": "The sidebar organizes past interactions by time (Today, Last 7 Days, Last 30 Days). Users can revisit, review, and continue previous discussions."
+        },
+        "token_tracking": {
+          "title": "Track Token Usage",
+          "desc": "Displays the number of tokens used per session. This helps users manage their consumption and optimize prompts for efficient usage."
+        },
+        "account_management": {
+          "title": "Account Registration",
+          "desc": "Displays the user’s email and settings menu. Users can adjust preferences, manage chat history, and customize chatbot behavior."
+        }
+      },
+      "impact_title": "How It Helps Businesses & Users",
+      "impact": [
+        "Multi-Model Switching – Instantly switch between different LLMs based on your needs or use cases.",
+        "Unified Interface – Access all models through one sleek, user-friendly dashboard.",
+        "Multi-language Support – Communicate in Arabic, English, and more with accurate translation and tone control.",
+        "Boosts Productivity – Frees up human agents for more complex tasks."
+      ],
+      "results": "Companies using AI have seen a 40% increase in customer engagement and a 30% reduction in support costs by automating common queries.",
+      "footer_projects": "Our Projects",
+      "view_all": "View All Projects"
+    },
+    "isianpadu_system": {
+      "title": "Company Website - A Seamless Digital Experience for Businesses",
+      "overview": "This portal serves as the central hub of your website, integrated with a powerful Content Management System (CMS). It allows you to easily manage and update your website content while also offering advanced AI-powered features. Designed for flexibility and ease of use, this portal enables businesses to customize their online presence, streamline workflows, and deliver dynamic, personalized user experiences across various industries.",
+      "features": {
+      "cms_table_view": {
+      "title": "CMS Table View",
+      "desc": "This is the section where you can see all the tables used in the CMS. These tables contain the content and data for your website, such as text, images, pages, and other information. From here, you can view, edit, and manage the content easily in a structured way."
+        },
+      "modern_website": {
+      "title": "Modern Website",
+      "desc": "A clean, responsive, and easy-to-manage website powered by a CMS, designed to meet the needs of today’s users and businesses."
+        },
+        
+      "content_entry_form": {
+      "title": "Content Entry Form",
+      "desc":"This is the detailed form view of a CMS row. It allows you to enter and edit content using Markdown, upload images, and manage the data stored in that specific entry."
+      }
+      
+    },
+    "benefits": [
+        "Centralized Content Control – Easily manage website content, media, and pages from one unified dashboard.",
+        "Boosts Productivity – Streamlines workflows with structured tables and intuitive editing tools.",
+        "Flexible Customization – Empowers businesses to adapt layout, design, and content to match their brand and goals.",
+        "Enhances User Experience – Delivers dynamic, responsive, and personalized content across all devices.",
+        "Improved Collaboration – Enables teams to manage, edit, and review content in real time with minimal efforts.",
+        "Scalable for Any Industry – Supports various sectors including e-commerce, education, corporate, and media with tailored CMS structures."
+      ],
+      "conclusion": "This powerful CMS-driven portal is ideal for businesses across e-commerce, education, media, and corporate sectors enabling streamlined content management, personalized user experiences, and AI-powered automation to boost productivity and engagement with minimal effort.",
+    "sfa_website": {
+      "title": "Sales Website",
+      "overview": "This official website was developed for Business Company to showcase its flagship product, the  mobile application. The site presents the app’s benefits, features, and use cases while allowing businesses to easily book personalized demos or contact the company for more information.",
+      "key_features": {
+        "product_showcase": "A visually engaging homepage introduces the app, outlining its key benefits speed, intelligence, and accuracy for sales process automation.",
+        "demo_booking_form": "A structured form allows users to book personalized demos by submitting company details, business type, and contact information.",
+        "admin_panel": "Admins can view, track, and update the status of demo requests (Pending, Contacted, Completed) via a dedicated panel."
+      },
+      "benefits": [
+        "Centralized Content Control – Easily manage website content, media, and pages from one unified dashboard.",
+        "Boosts Productivity – Streamlines workflows with structured tables and intuitive editing tools.",
+        "Flexible Customization – Empowers businesses to adapt layout, design, and content to match their brand and goals.",
+        "Enhances User Experience – Delivers dynamic, responsive, and personalized content across all devices.",
+        "Improved Collaboration – Enables teams to manage, edit, and review content in real time with minimal friction.",
+        "Scalable for Any Industry – Supports various sectors including e-commerce, education, corporate, and media with tailored CMS structures."
+      ],
+      "conclusion": "This powerful CMS-driven portal is ideal for businesses across e-commerce, education, media, and corporate sectors—enabling streamlined content management, personalized user experiences, and AI-powered automation to boost productivity and engagement with minimal effort."
+    },
+    "certificate_system": {
+      "title": "Automated Certificate Generation – Seamless & Efficient Digital Certification",
+      "overview": "This Automated Certificate Generation system simplifies the process of issuing certificates by automating the customization, storage, and delivery of certificates in PDF format.",
+      "key_features": {
+        "template_provision": "Predefined certificate template images for Customized for specific needs.",
+        "google_drive_integration": "Store certificates in a shared Google Drive folder, making them easily accessible.",
+        "csv_data": "Upload a CSV file containing recipient details, set back and let the magic works.",
+        "auto_dynamic_generation": "Effortlessly customize certificates by automatically inserting the recipient’s full name, assigning a unique serial number for verification, and embedding a QR code linking to its Google Drive location. The system then generates a PDF and uploads it into a dedicated folder named after the recipient, ensuring seamless organization and accessibility.",
+        "email_notifications": "Sends an email to each recipient with a direct link to their certificate on Google Drive."
+      },
+      "benefits": [
+        "Saves Time & Effort - Eliminates the manual certificate generation process.",
+        "Enhances Accuracy - Minimizes errors by automating name placement and serial number assignment.",
+        "Improves Accessibility - Certificates are stored securely and can be retrieved anytime via Google Drive.",
+        "Boosts Professionalism - Ensures high-quality, standardized certificate issuance.",
+        "Strengthens Verification - QR codes allow for instant certificate validation, enhancing trust and credibility."
+      ],
+      "conclusion": "This system is ideal for corporate training, universities, online courses, and events, ensuring seamless certificate issuance with minimal manual work.",
+      "footer_projects": "Our Projects",
+      "view_all": "View All Projects"
+    },
+    "amaze_venture": {
+      "title": "Amaze Venture",
+      "overview": "Embark on an immersive journey with Amaze Venture, a groundbreaking 3D maze-puzzle adventure game that fuses cutting edge AI and voice recognition technology. Join Alex, a passionate gamer, as he navigates through the enigmatic Robo-Sapience Boarding Academy. After a fierce debate with his father about prioritizing studies over gaming, Alex finds himself mysteriously transported into the academy, a place where every corner hides secrets and every decision counts. Guided by a letter from the game's developer, Alex must prove his worth through a series of intense challenges.",
+      "key_features": {
+        "voice_recognition": "Voice recognition is integrated into Amaze Venture to enable natural interactions and immersive experiences. Players can use voice commands to interact with AI NPCs. This feature improves accessibility and immersion, showcasing my ability to combine innovative technology with creative game design.",
+        "color_ball_shooting": "Color-shooting challenge! where players face off against NPCs powered by Behavior Tree AI. This intelligent AI makes NPCs more responsive and adaptive, ensuring that they choose the best choises as the game progresses.",
+        "car_racing": "Exciting car racing challenge! where NPCs are powered by ML-Agents and Reinforcement Learning (RL). Using RL techniques, the NPCs learn and improve their racing strategies over time, adapting to the player's actions and becoming increasingly competitive.",
+        "quiz_ai_voice": "A maze challenge! where an NPC navigates through the maze based on the user's answer to a question. The NPC’s movement direction changes depending on the correct or incorrect input while using voice recognition."
+      },
+      "benefits": [
+        "Centralized Content Control – Easily manage website content, media, and pages from one unified dashboard.",
+        "Boosts Productivity – Streamlines workflows with structured tables and intuitive editing tools.",
+        "Flexible Customization – Empowers businesses to adapt layout, design, and content to match their brand and goals.",
+        "Enhances User Experience – Delivers dynamic, responsive, and personalized content across all devices.",
+        "Improved Collaboration – Enables teams to manage, edit, and review content in real time with minimal friction.",
+        "Scalable for Any Industry – Supports various sectors including e-commerce, education, corporate, and media with tailored CMS structures."
+      ],
+      "conclusion": "This powerful CMS-driven portal is ideal for businesses across e-commerce, education, media, and corporate sectors—enabling streamlined content management, personalized user experiences, and AI-powered automation to boost productivity and engagement with minimal effort.",
+      "footer_projects": "Our Projects",
+      "view_all": "View All Projects"
+    }
+  },
+      "sfa_website": {
+      "title": "Company Product website - Showcasing Innovation and Booking list",
+      "overview": "This official website was developed for Business Company to showcase its flagship product. The site presents the app’s benefits, features, and use cases while allowing businesses to easily book personalized demos or contact the company for more information.",
+ "key_features": {
+    "product_showcase": {
+      "title": "Product Showcase",
+      "desc": "A visually engaging homepage that introduces the app and highlights its core benefits speed, intelligence, and accuracy in automating the booking process."
+    },
+    "demo_booking_form": {
+      "title": "Demo Booking Form",
+      "desc": "A structured form that enables users to request personalized demos by submitting their company details, business type, and contact information."
+    },
+    "admin_panel": {
+      "title": "Admin Panel",
+      "desc": "A dedicated panel where administrators can view, track, and update the status of demo requests such as Pending, Contacted, or Completed."
+    }
+  },
+      "benefits": [
+        "Professional Brand Presence – Establishes client expertise with a clean, product-focused design.",
+        "Clear Product Insight – Communicates the value of the product for streamlining sales operations.",
+        "Simple Demo Booking – Lets potential clients easily request a demo with full contact details.",
+        "Admin Request Dashboard – Enables client to manage and respond to demo requests efficiently.",
+        "Stronger Engagement – Enhances client communication with direct contact options and lead tracking."
+      ],
+      "conclusion": "This streamlined platform empowers businesses to showcase their expertise, attract qualified leads, and efficiently manage client engagement through a clear, product-driven experience."
+    },
+    "certificate_system": {
+      "title": "Automated Certificate Generation – Seamless & Efficient Digital Certification",
+      "overview": "This Automated Certificate Generation system simplifies the process of issuing certificates by automating the customization, storage, and delivery of certificates in PDF format.",
+  "key_features": {
+    "template_provision": {
+      "title": "Template Provision",
+      "desc": "Predefined certificate templates customized for specific needs, ensuring consistency and professionalism in design."
+    },
+    "google_drive_integration": {
+      "title": "Google Drive Integration",
+      "desc": "Certificates are stored in a shared Google Drive folder, making them easily accessible and securely organized."
+    },
+    "csv_data": {
+      "title": "CSV Data Upload",
+      "desc": "Upload a CSV file with recipient details then sit back and let the system handle the rest automatically."
+    },
+    "auto_dynamic_generation": {
+      "title": "Auto Dynamic Generation",
+      "desc": "Automatically generates certificates by inserting the recipient’s full name, assigning a unique serial number, and embedding a QR code linking to the certificate’s Google Drive location. The system saves the PDF in a folder named after the recipient."
+    },
+    "email_notifications": {
+      "title": "Email Notifications",
+      "desc": "Sends an email to each recipient with a direct link to their certificate stored on Google Drive."
+    }
+  },
+      "benefits": [
+        "Saves Time & Effort - Eliminates the manual certificate generation process.",
+        "Enhances Accuracy - Minimizes errors by automating name placement and serial number assignment.",
+        "Improves Accessibility - Certificates are stored securely and can be retrieved anytime via Google Drive.",
+        "Boosts Professionalism - Ensures high-quality, standardized certificate issuance.",
+        "Strengthens Verification - QR codes allow for instant certificate validation, enhancing trust and credibility."
+      ],
+      "conclusion": "This system is ideal for corporate training, universities, online courses, and events, ensuring seamless certificate issuance with minimal manual work.",
+      "footer_projects": "Our Projects",
+      "view_all": "View All Projects"
+    },
+    "amaze_venture": {
+      "title": "Amaze Venture – An AI Powered 3D Gaming Experience",
+      "overview": "Embark on an immersive journey with Amaze Venture, a groundbreaking 3D maze-puzzle adventure game that fuses cutting edge AI and voice recognition technology. Join Alex, a passionate gamer, as he navigates through the enigmatic Robo-Sapience Boarding Academy. After a fierce debate with his father about prioritizing studies over gaming, Alex finds himself mysteriously transported into the academy, a place where every corner hides secrets and every decision counts. Guided by a letter from the game's developer, Alex must prove his worth through a series of intense challenges.",
+  "key_features": {
+    "voice_recognition": {
+      "title": "Voice Recognition",
+      "desc": "Voice recognition is integrated into Amaze Venture to enable natural interactions and immersive experiences. Players can use voice commands to interact with AI-powered NPCs. This feature enhances accessibility and immersion, demonstrating the integration of innovative technology with creative game design."
+    },
+    "color_ball_shooting": {
+      "title": "Color Ball Shooting",
+      "desc": "A color-shooting challenge where players compete against NPCs powered by Behavior Tree AI. These intelligent NPCs respond and adapt in real time, making strategic choices as the game progresses."
+    },
+    "car_racing": {
+      "title": "Car Racing",
+      "desc": "An exciting car racing challenge featuring NPCs trained with ML-Agents and Reinforcement Learning (RL). These NPCs continuously learn and refine their racing strategies, becoming more competitive with every match."
+    },
+    "quiz_ai_voice": {
+      "title": "Quiz AI with Voice",
+      "desc": "A unique maze challenge where an NPC’s movement depends on the player’s voice-answered quiz. The direction changes based on correct or incorrect answers, combining educational gameplay with voice recognition technology."
+    }
+  },
+      "benefits": [
+        "Innovative Engagement – Voice recognition and interactive AI features boost user immersion, keeping players engaged longer.",
+        "Adaptive Learning – AI-driven gameplay adapts to user behavior, offering dynamic and personalized experiences.",
+        "Showcase of Tech Capabilities – Demonstrates the power of modern AI (e.g., Behavior Trees, ML-Agents, RL) in real-time applications.",
+        "Accessibility & Inclusivity – Voice commands improve accessibility for a wider range of users, including those with physical limitations."
+      ],
+      "conclusion": "By combining advanced AI with immersive voice-based interactions, Amaze Venture delivers engaging, adaptive, and educational experiences that highlight the future potential of game-based technology for users and businesses alike.",
+      "footer_projects": "Our Projects",
+      "view_all": "View All Projects"
+    }
+  },
+
+  "servicesPage": {
+
+    "hero": {
+      "headline": "Digital Services Built with ",
+      "subtext": "Empowering Your Vision with Tailored Digital Solutions"
+    },
+    "categories": {
+      "Web": "Modern Web Development",
+      "App" : "Mobile App Development",
+      "AI" : "AI-Powered Apps",
+      "Game" : "Game Development",
+      "Consultancy" : "IT Consultancy",
+      "Design" : "Graphic Design",
+      "read": "Read More"
+    },
+    "ContactUsServices" : {
+      "contact" : "Contact Us"
+    },
+
+    "webDevelopment": {
+      "hero": {
+        "title": "Web Development with",
+        "subtitle": "Cutting edge Solutions for Responsive Websites, E-Commerce Platforms, CMS Development, and Web Applications – All in One Place"
+      },
+      "smartSolutions": {
+        "title": "Smart Web Solutions for Your Business",
+        "content": "At Alogza, we create fast, responsive, and user-friendly websites tailored to your goals. From simple sites to complex web apps, we use modern tools to build solutions that boost your online presence and performance."
+      },
+      "process": {
+        "title": "The 5 Stages Of The Website Development Process",
+        "steps": {
+          "planning": {
+            "title": "Planning & Research",
+            "desc": "This foundational phase includes gathering requirements, understanding the target audience, defining goals, and outlining the site structure. A clear sitemap and project scope are developed to guide the next steps."
+          },
+          "design": {
+            "title": "Design & Prototyping",
+            "desc": "We create visually engaging and user-centered wireframes and mockups. Prototypes are developed to represent the layout, user flow, and interaction before moving to development, ensuring a smooth UX."
+          },
+          "development": {
+            "title": "Development",
+            "desc": "Frontend and backend developers bring the designs to life. Responsive layouts, CMS integration, and custom functionalities are built using clean, maintainable code following the latest web standards."
+          },
+          "testing": {
+            "title": "Testing & QA",
+            "desc": "Thorough testing is performed for functionality, responsiveness, accessibility, performance, and security. Bugs are fixed and refinements applied to ensure a polished product."
+          },
+          "deployment": {
+            "title": "Deployment & Maintenance",
+            "desc": "The site is launched to the live server. We continuously monitor performance, apply updates, fix post-launch issues, and implement new features as needed."
+          }
+        }
+      },
+      "websiteFeatures": {
+        "title": "Website Development Features",
+        "features": [
+          {
+            "title": "Responsive Web Design",
+            "description": "We design websites that look and work great on all devices. Our responsive layouts ensure optimal user experience across desktops, tablets, and smartphones."
+          },
+          {
+            "title": "Frontend Development",
+            "description": "Fast, dynamic, and interactive user interfaces are created to provide seamless and engaging user experiences."
+          },
+          {
+            "title": "Backend Development",
+            "description": "Robust and scalable backend systems are developed to ensure secure data handling and efficient application performance."
+          },
+          {
+            "title": "UI/UX Design for Web",
+            "description": "Beautiful and user-friendly designs tailored to your brand. We focus on clarity, accessibility, and visual hierarchy for an intuitive user journey."
+          },
+          {
+            "title": "Website Testing & QA",
+            "description": "Thorough testing to ensure flawless functionality, cross-browser compatibility, and performance optimization across all platforms."
+          },
+          {
+            "title": "Website Maintenance & Support",
+            "description": "Ongoing support and updates to keep your site secure, fast, and up-to-date with new features and content changes."
+          }
+        ]
+      }
+    },
+    "mobileApp": {
+      "hero": {
+        "title": "Mobile Application with ",
+        "subtitle": "Innovative Solutions for Native & Cross-Platform Apps, Progressive Web Apps, and Mobile Commerce – All in One Place"
+      },
+      "smartSolutions": {
+        "title": "Empowering Your Business Through Mobile Innovation",
+        "content": "At Alogza, we specialize in crafting high-performance mobile applications that align with your unique goals and user needs. From intuitive UI/UX design to seamless cross-platform development, we leverage the latest mobile technologies to help your business connect, grow, and thrive in the digital age. Whether you’re launching a startup or enhancing an existing service, our mobile-first strategy ensures your app stands out in today’s competitive marketplace."
+      },
+      "process": {
+        "title": "The 5 Stages Of The Mobile App Development Process",
+        "steps": {
+          "planning": {
+            "title": "Planning",
+            "desc": "At this initial stage, we define the app’s purpose, target audience, and core functionality. We conduct market research, analyze competitors, and create a strategic roadmap with clear objectives and timelines for development."
+          },
+          "design": {
+            "title": "Design",
+            "desc": "Our design phase focuses on creating intuitive user experiences and appealing interfaces. We develop wireframes, mockups, and interactive prototypes that visualize the app’s flow and functionality before any coding begins."
+          },
+          "development": {
+            "title": "Development",
+            "desc": "During development, We transform designs into functional code. We follow agile methodologies, building the app’s architecture, implementing features, and integrating necessary APIs and backend services."
+          },
+          "testing": {
+            "title": "Testing",
+            "desc": "Rigorous quality assurance ensures your app performs flawlessly. We conduct functional testing, usability testing, performance testing, and security audits to identify and resolve any issues before launch."
+          },
+          "deployment": {
+            "title": "Deployment & Maintenance",
+            "desc": "After successful testing, we deploy your app to the appropriate stores and platforms. Post-launch, we provide ongoing maintenance, updates, and support to ensure optimal performance and user satisfaction."
+          }
+        }
+      },
+      "mobileFeatures": {
+        "title": "Mobile Development Features",
+        "features": [
+          {
+            "title": "iOS App Development",
+            "description": "Native mobile applications for iOS are developed to ensure high performance, seamless integration with the Apple ecosystem, and smooth deployment to the App Store."
+          },
+          {
+            "title": "Android App Development",
+            "description": "Custom Android applications are created following modern design standards, with full integration of essential services and support for various devices."
+          },
+          {
+            "title": "Cross-Platform Development",
+            "description": "Cross-platform applications are built from a single codebase to run efficiently on both iOS and Android, reducing development time and cost while maintaining a native user experience."
+          },
+          {
+            "title": "UI/UX Design for Mobile",
+            "description": "User-centered design that prioritizes usability and engagement. We create intuitive interfaces with smooth navigation flows, consistent visual language, and delightful micro-interactions."
+          },
+          {
+            "title": "App Testing & QA",
+            "description": "Comprehensive testing across devices and OS versions. Our QA process includes functional testing, performance optimization, security audits, and automated testing to ensure your app is stable and reliable."
+          },
+          {
+            "title": "App Maintenance & Support",
+            "description": "Long-term support and continuous improvement for your mobile applications. We provide regular updates, performance monitoring, bug fixes, and feature enhancements to keep your app competitive."
+          }
+        ]
+      }
+    },
+    "aiSolutions": {
+      "hero": {
+        "title": "AI Solutions with ",
+        "subtitle": "Advanced Solutions for Machine Learning, Large Language Models (LLMs), Intelligent Agents, Natural Language Processing, AI Chatbots, and Intelligent Automation – All in One Place"
+      },
+ "smartSolutions": {
+
+    "title": "Smarter AI & Autonomous Agents That Transform Business Interaction",
+
+    "content": "At Alogza, we create intelligent AI systems and autonomous agents that elevate how businesses engage, operate, and scale. Our solutions go beyond static chatbots empowering AI agents to understand goals, take proactive actions, and make real time decisions. Whether automating customer service, coordinating workflows, or operating independently in dynamic environments, our tools provide always on, scalable, human like support for web, mobile, and enterprise platforms."
+
+  },
+      "process": {
+        "title": "The 5 Phases of AI Solutions & Chatbot Development",
+    "steps": {
+
+      "discovery": {
+
+        "title": "1. Discovery & Planning",
+
+        "desc": "We start by learning about your business goals and challenges. Then, we plan how AI and chatbots can help you work faster and serve your customers better."
+
+      },
+
+      "preparation": {
+
+        "title": "2. Data Preparation",
+
+        "desc": "We gather and organize the information your AI needs to work well. Clean and useful data helps make the results more accurate and helpful."
+
+      },
+
+      "model": {
+
+        "title": "3. Building the AI & Chatbot",
+
+        "desc": "We build smart chatbots and agents that understand users and respond the right way. Our AI can also take simple actions or connect with your systems."
+
+      },
+
+      "testing": {
+
+        "title": "4. Testing & Improving",
+
+        "desc": "We test the AI to make sure it understands questions and gives helpful answers. We fix issues and make improvements before going live."
+
+      },
+
+      "deployment": {
+
+        "title": "5. Launch & Support",
+
+        "desc": "After launch, we monitor how the AI performs and keep improving it. We make sure it stays accurate, helpful, and always ready to support your business."
+
+      }
+
+    }
+
+  },
+
+      "aiFeatures": {
+        "title": "AI Development Features",
+   "features": [
+
+      {
+
+        "title": "AI Strategy, Consulting & Agent Design",
+
+        "description": "We help businesses adopt AI agents effectively from identifying automation opportunities to building scalable deployment strategies using autonomous systems and language models."
+
+      },
+
+      {
+
+        "title": "Autonomous AI Agents",
+
+        "description": "We develop AI agents that operate independently, perform multi step tasks, access APIs, and make context based decisions. Ideal for automating workflows, research, customer support, and business processes."
+
+      },
+
+      {
+
+        "title": "Custom Chatbot Development",
+
+        "description": "We build intelligent conversational interfaces powered by LLMs and NLP to automate dialogue, support users, and guide decision making on websites, apps, and messaging platforms."
+
+      },
+
+      {
+
+        "title": "Natural Language Processing (NLP)",
+
+        "description": "From sentiment analysis to summarization and intent classification, our NLP solutions enable systems to understand, process, and interact using natural human language."
+
+      },
+
+      {
+
+        "title": "Conversational & Autonomous UX Design",
+
+        "description": "We create humanlike, intuitive conversational flows for both chatbots and agents. This includes tone control, fallback logic, decision branches, and seamless user interactions."
+
+      },
+
+      {
+
+        "title": "AI Model & Agent Integration",
+
+        "description": "We fine-tune and deploy LLMs and agent frameworks across platforms. Seamless API integration and cloud deployment ensure stability, scalability, and real time responsiveness."
+
+      },
+
+      {
+
+        "title": "Monitoring, Maintenance & Autonomous Learning",
+
+        "description": "Our support extends beyond deployment—with monitoring, performance tuning, and ongoing learning mechanisms to ensure your AI agents stay reliable, efficient, and business-aligned."
+
+      }
+
+]
+
+}
+
+},
+    "gameDevelopment": {
+      "hero": {
+        "title": "Game Development with ",
+        "subtitle": "Interactive Solutions for 2D/3D Games, Mobile Gaming, VR/AR Experiences, and Interactive Entertainment – All in One Place"
+      },
+      "smartSolutions": {
+        "title": "Game Development That Blends Creativity with Technology",
+        "content": "At Alogza, we bring ideas to life through engaging and interactive game development. From mobile and web-based games to full-scale desktop experiences, our team combines creativity, storytelling, and technical expertise to build games that entertain and inspire. Whether it’s 2D, 3D, or multiplayer gameplay, we focus on delivering high-performance, visually appealing, and user-friendly games tailored to your vision and audience."
+      },
+      "process": {
+        "title": "The 5 Phases of Game Development",
+        "steps": {
+          "concept": {
+            "title": "Concept & Planning",
+            "desc": "Your vision, target audience, and gameplay goals are first understood through the provision of a comprehensive Game Design Document (GDD). Core mechanics are brainstormed, game genres are defined, and development milestones are outlined."
+          },
+          "design": {
+            "title": "Game Design",
+            "desc": "Your vision is translated into a practical blueprint. Characters, levels, environments, and interfaces are designed by the team to enhance player experience. Focus is placed on intuitive UI/UX and engaging visuals that reflect the game’s identity."
+          },
+          "production": {
+            "title": "Development & Art Production",
+            "desc": "Ideas are brought to life. The game is developed using industry-standard tools, with 2D/3D art, animations, sound, and advanced gameplay logic such as AI behavior, physics, and user interactions integrated seamlessly."
+          },
+          "testing": {
+            "title": "Testing & QA",
+            "desc": "We perform functional, performance, and playtesting to ensure smooth gameplay and bug-free experiences. Feedback loops and iterations refine balance, fix glitches, and enhance overall quality."
+          },
+          "launch": {
+            "title": "Launch & Post-Launch Support",
+            "desc": "Once polished, the game is deployed to stores or platforms. Post-launch, we monitor player feedback, patch bugs, release updates, and scale infrastructure to support growing player bases."
+          }
+        }
+      },
+      "gameFeatures": {
+        "title": "Game Development Features",
+        "features": [
+          {
+            "title": "Custom Game Development",
+            "description": "We build engaging 2D and 3D games tailored to your vision, from mobile games to full-scale PC and console titles using custom engines."
+          },
+          {
+            "title": "Multiplayer & Networking",
+            "description": "Implement real-time multiplayer features with optimized networking solutions, including matchmaking, leaderboards, and cross-platform gameplay."
+          },
+          {
+            "title": "Game UI/UX Design",
+            "description": "Design intuitive game interfaces and smooth user experiences that keep players immersed and engaged."
+          },
+          {
+            "title": "In-Game Economy & Monetization",
+            "description": "Build in-game currency systems, item shops, and ad integrations to support various monetization strategies."
+          },
+          {
+            "title": "VR/AR Game Development",
+            "description": "Deliver immersive virtual and augmented reality gaming experiences using platforms like Meta Quest, ARKit, and ARCore."
+          },
+          {
+            "title": "Post-Launch Support & Live Ops",
+            "description": "We provide ongoing content updates, analytics, player support, and community management to keep your game alive and thriving."
+          }
+        ]
+      }
+    },
+"itConsultancy": {
+  "hero": {
+    "title": "IT Consultancy with",
+    "subtitle": "Simple and Practical Solutions for Technology Planning, Digital Growth, System Setup, and IT Support – All in One Place"
+  },
+  "smartSolutions": {
+    "title": "Helpful IT Consultancy to Support Your Business",
+    "content": "At Alogza, we provide easy-to-understand IT advice and solutions to help your business grow with technology. Whether you need help planning, setting up systems, or securing your data, we offer services that fit your needs. We work with startups and small businesses to give you the right tools and support to keep moving forward."
+  },
+  "process": {
+    "title": "The 5 Phases of IT Consultancy",
+    "steps": {
+      "consultation": {
+        "title": "Getting to Know You",
+        "desc": "We start by learning about your business and technology needs. This helps us understand what’s working and what can be improved."
+      },
+      "strategy": {
+        "title": "Making a Plan",
+        "desc": "We create a clear plan that matches your business goals with the best technology options and timelines."
+      },
+      "design": {
+        "title": "Building the Solution",
+        "desc": "We design and prepare the systems or tools your business needs, from software to IT setup."
+      },
+      "implementation": {
+        "title": "Testing and Launching",
+        "desc": "Before you start using the new systems, we test everything to make sure it works well and is secure. Then we help you get it running smoothly."
+      },
+      "support": {
+        "title": "Ongoing Help and Updates",
+        "desc": "We continue to support your systems and make improvements as your business grows and changes."
+      }
+    }
+  },
+  "ITConsultancyFeatures": {
+    "title": "IT Consultancy Features",
+    "features": [
+      {
+        "title": "Technology Planning",
+        "description": "We help businesses choose the right technology tools and make a clear plan for using them to grow and improve their operations."
+      },
+      {
+        "title": "Network & Systems Setup",
+        "description": "We guide you in setting up your computers, internet, and basic systems to make sure everything runs smoothly and securely."
+      },
+      {
+        "title": "Basic Cybersecurity Help",
+        "description": "We help protect your business from common online threats and provide simple steps to keep your data and systems safe."
+      },
+      {
+        "title": "Cloud Services Guidance",
+        "description": "We assist in moving your files and software to cloud platforms like Google Drive or Microsoft OneDrive, making them easier to access and manage."
+      },
+      {
+        "title": "Connecting Your Tools",
+        "description": "We help link your different software tools so they work better together and reduce the need for manual work."
+      },
+      {
+        "title": "Ongoing IT Support",
+        "description": "We provide friendly and reliable support when you need help with technical issues or want to improve your setup."
+}
+]
+}
+},
+
+
+"uiuxDesign": {
+  "hero": {
+    "title": "Creative Graphic Design Solutions",
+    "subtitle": "A Full Spectrum of Designs – Including Logos, Branding, UI/UX, Business Cards, Posters, Packaging, and More – All in one place"
+  },
+  "smartSolutions": {
+    "title": "Visual Identities That Are Designed to Leave a Mark",
+    "content": "At Alogza, impactful and memorable visual designs are created to elevate brands across industries. A wide range of services is provided – from logo design and marketing materials to digital branding and UI/UX interfaces. Each project is approached with strategic thinking and creative expertise, ensuring that visuals are aligned with your goals and resonate with your audience."
+  },
+  "process": {
+    "title": "The 5 Phases of Graphic Design",
+    "steps": {
+      "research": {
+        "title": "Research & Discovery",
+        "desc": "Your brand, target market, and competitors are analyzed thoroughly. Insights are gathered through client discussions and industry research to guide the design approach."
+      },
+      "journey": {
+        "title": "Concept Development",
+        "desc": "Creative directions are explored and developed through moodboards and visual drafts. Key ideas are refined to ensure alignment with the brand vision."
+      },
+      "prototyping": {
+        "title": "Design Execution",
+        "desc": "Designs across various mediums are crafted including logos, packaging, business cards, and digital interfaces. Visual consistency and quality are maintained throughout."
+      },
+      "visual": {
+        "title": "Client Feedback & Revisions",
+        "desc": "Designs are shared for review and revisions are implemented based on feedback. An iterative process is followed until client satisfaction is achieved."
+      },
+      "testing": {
+        "title": "Finalization & Delivery",
+        "desc": "Final assets are prepared and delivered in the required formats, optimized for both print and digital platforms. Supporting documentation, such as style guides, is included when applicable."
+      }
+    }
+  },
+  "uiuxDesignFeatures": {
+    "title": "Graphic Design Features",
+    "features": [
+      {
+        "title": "Logo & Brand Identity Design",
+        "description": "Unique and memorable logos are designed, and full brand identities are developed to reflect your company’s values and mission."
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "User-centered interfaces are created to provide seamless experiences across websites and mobile applications."
+      },
+      {
+        "title": "Business Cards & Stationery",
+        "description": "Branded business cards, letterheads, and stationery are crafted to ensure a professional and consistent corporate identity."
+      },
+      {
+        "title": "Marketing & Promotional Materials",
+        "description": "Flyers, brochures, posters, banners, and social media graphics are designed to attract attention and communicate messages effectively."
+      },
+      {
+        "title": "Packaging Design",
+        "description": "Product packaging is designed to stand out on shelves and communicate brand value while enhancing usability and appeal."
+      },
+      {
+        "title": "Brand Guidelines & Design Systems",
+        "description": "Comprehensive brand guidelines and scalable design systems are built to ensure consistency across all platforms and teams."
+    }]}
+}
+  },
+
+  "aboutUs": {
+    "intro": {
+      "title": "About Us",
+      "description": "We are a cutting edge startup offering a comprehensive range of services designed to help businesses succeed in the digital world. Whether you’re looking to develop a website, create a mobile app, or bring your creative ideas to life, Alogza has the expertise to make it happen."
+    },
+    "headline": "Innovating the Future, Empowering Businesses",
+    "subheadline": "Shaping Tomorrow’s Digital World with Cutting Edge Technology",
+    "vision": {
+      "title": "Vision",
+      "description": "Our vision is to create a world where technology empowers businesses to thrive, innovate, and connect with their audiences in meaningful ways. As a leading provider of cutting edge digital solutions, we drive growth, enhance efficiency, and create lasting value for our clients."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "At Alogza, our mission is to empower businesses through innovative technology solutions. We deliver outstanding services in web/app development, creative design, and cyber-security. Through reliable technology and exceptional support, we enable confident navigation of the ever-evolving digital landscape."
+    }
+  },
+
+"contactUs": {
+    "intro": {
+      "title": "Contact Us",
+      "description": "Have a question or a project in mind? We’re here to help! Whether you need a custom website, an advanced mobile app, an AI-powered chatbot, graphic design, professional tech consulting, or anything related to technology — our team is ready to bring your vision to life."
+    },
+    "form": {
+      "headline": "Reach Out to Build What’s Next",
+      "subtext": "Building the next big thing starts with a simple connection",
+      "fields": {
+        "lastName": "Last Name",
+        "firstName": "First Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "submit": "Send",
+        "submiting": "Sending...",
+        "success": "Your message has been sent successfully!"
+
+      },
+      "Succesful": "Your message has been sent successfully!",
+      "Faild": "Failed to send message!",
+
+      "contactFormErrors": {
+        "firstNameRequired": "First name is required",
+        "lastNameRequired": "Last name is required",
+        "invalidEmail": "Please enter a valid email",
+        "invalidPhone": "Please enter a valid phone number",
+        "messageTooShort": "Message must be at least 10 characters"
+      }
+    }
+  },
+
+  "footer": {
+    "sections": {
+      "homepage": "Homepage",
+      "services": "Services",
+      "projects": "Projects",
+      "company": "Company"
+    },
+    "links": {
+      "home": "Home",
+      "mobileApp": "Mobile App",
+      "modernWeb": "Modern Web",
+      "aiApps": "AI-Powered Apps",
+      "gameDev": "Game Dev",
+      "itConsultancy": "IT Consultancy",
+      "uxUiDesign": "Graphic Design",
+      "aiProjects": "AI Projects",
+      "webProjects": "Web Projects",
+      "appProjects": "App Projects",
+      "gameProjects": "Game Development",
+      "aboutUs": "About Us",
+      "contactUs": "Contact Us"
+    },
+    "contact": {
+      "email": "Email: info@alogza.com",
+      "phone": "Phone/WhatsApp: +601163887917"
+    }
+  }
+}
