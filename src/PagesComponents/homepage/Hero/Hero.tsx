@@ -10,7 +10,6 @@ import MatrixEffect from "@/app/[locale]/components/MatrixEffect";
 import { useStore } from "@/hooks/useStore";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useTranslation } from "react-i18next";
-import Link from "next/link";
 import Image from "next/image";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);

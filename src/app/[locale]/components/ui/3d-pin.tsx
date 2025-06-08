@@ -29,30 +29,34 @@ export const PinContainer = ({
   };
 
   return (
-    <LinkWithLoading
+    <div
       className={cn("group/pin relative z cursor-pointer", containerClassName)}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      href={href || "/"}
     >
-      <div
-        style={{
-          perspective: "1000px",
-          transform: "rotateX(70deg) translateZ(0deg)",
-        }}
-        className="absolute top-1/2 left-1/2 mt-4 ml-[0.09375rem] -translate-x-1/2 -translate-y-1/2"
+      <LinkWithLoading
+        className="w-full h-full"
+        href={href || "/"}
       >
         <div
           style={{
-            transform: transform,
+            perspective: "1000px",
+            transform: "rotateX(70deg) translateZ(0deg)",
           }}
-          className="absolute top-1/2 left-1/2 flex items-start justify-start overflow-hidden rounded-2xl border border-white/[0.1] bg-black p-4 shadow-[0_8px_16px_rgb(0_0_0/0.4)] transition duration-700 group-hover/pin:border-white/[0.2]"
+          className="absolute top-1/2 left-1/2 mt-4 ml-[0.09375rem] -translate-x-1/2 -translate-y-1/2"
         >
-          <div className={cn("relative", className)}>{children}</div>
+          <div
+            style={{
+              transform: transform,
+            }}
+            className="absolute top-1/2 left-1/2 flex items-start justify-start overflow-hidden rounded-2xl border border-white/[0.1] bg-black p-4 shadow-[0_8px_16px_rgb(0_0_0/0.4)] transition duration-700 group-hover/pin:border-white/[0.2]"
+          >
+            <div className={cn("relative", className)}>{children}</div>
+          </div>
         </div>
-      </div>
+      </LinkWithLoading>
       <PinPerspective title={title} href={href} />
-    </LinkWithLoading>
+    </div>
   );
 };
 

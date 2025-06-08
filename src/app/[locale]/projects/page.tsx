@@ -99,7 +99,7 @@ function FilteredProjects() {
     setActiveFilters([]);
   };
 
-  
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handler = setTimeout(() => {
       updateURL(searchQuery, activeFilters);
