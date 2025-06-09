@@ -24,19 +24,10 @@ export default function Header() {
   }, []);
 
   // Helper function to check if a path is active
-  const isActivePath = (path: string) => {    // Get locale from current path
-    const locale = pathname.match(/^\/(en|ar)/)?.[0] || "";
-
-    // Normalize paths with trailing slashes removed and lowercase
+  const isActivePath = (href: string) => {
+    // Normalize both paths (remove trailing slash, lowercase)
     const currentPath = pathname.replace(/\/$/, "").toLowerCase();
-    const navPath = (locale + path).replace(/\/$/, "").toLowerCase();
-
-    // Handle root path specially
-    if (path === "/") {
-      return currentPath === locale || currentPath === locale + "/";
-    }
-
-    // Match if currentPath is exactly navPath
+    const navPath = href.replace(/\/$/, "").toLowerCase();
     return currentPath === navPath;
   };
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { LinkProps } from "next/link";
+import { usePathname } from "next/navigation";
 
 interface LinkWithLoadingProps extends LinkProps {
   className?: string;
@@ -16,7 +17,14 @@ export default function LinkWithLoading({
   onClick,
   ...props
 }: LinkWithLoadingProps) {
+  const pathname = usePathname();
+
   const handleClick = (e: React.MouseEvent) => {
+    if (pathname === href) {
+      // Already on this page, do nothing
+      e.preventDefault();
+      return;
+    }
     // Dispatch both event types for better compatibility
     window.dispatchEvent(new Event("navigationstart"));
     window.dispatchEvent(new Event("next:navigation-start"));
