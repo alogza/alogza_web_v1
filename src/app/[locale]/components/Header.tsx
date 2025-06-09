@@ -15,6 +15,7 @@ export default function Header() {
   const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const currentLocale = pathname.split("/")[1]; // 'en' or 'ar'
 
   useEffect(() => {
     if (typeof document !== "undefined") {
@@ -80,7 +81,7 @@ export default function Header() {
   const hrefs = ["/", "/services", "/projects", "/aboutus", "/contact"];
 
   const navigationItems = navLabels.map((label, i) => ({
-    href: hrefs[i],
+    href: `/${currentLocale}${hrefs[i] === "/" ? "" : hrefs[i]}`,
     label,
   }));
   // The loading state is now handled by LinkWithLoading
