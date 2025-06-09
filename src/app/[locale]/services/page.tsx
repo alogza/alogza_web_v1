@@ -5,10 +5,11 @@ import HeroHeader from "../components/HeroHeader";
 import { PinContainer } from "../components/ui/3d-pin";
 import { Suspense } from "react";
 import LoadingOverlay from "../components/LoadingOverlay";
+import { useLocalePath } from "@/utils/localPath";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
-
+  const localePath = useLocalePath();
   // Sample project data for the pins
   const pinnedProjects = [
     {
@@ -85,11 +86,13 @@ export default function ProjectsPage() {
         <section className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-4 py-8 md:py-12 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-6 auto-rows-max">
             {pinnedProjects.map((project, index) => (
+              
               <div key={index} className="flex items-center justify-center">
-                <PinContainer
-                  title={t("servicesPage.categories.read")}
-                  href={project.href}
-                >
+    <PinContainer
+      key={project.id}
+      title={project.title}
+      href={localePath(project.href)}
+    >
                   <div className="flex h-[17rem] w-[20rem] flex-col p-4 tracking-tight text-slate-100/50">
                     <div className="relative w-full h-full overflow-hidden rounded-lg">
                       <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 to-transparent" />

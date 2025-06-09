@@ -11,6 +11,7 @@ import {
 import { HoverEffect } from "@/app/[locale]/components/ui/card-hover-effect";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
+import LinkWithLoading from "../../components/LinkWithLoading";
 
 export default function IT_ConsultancyFeatures() {
   const { t, i18n } = useTranslation();
@@ -88,7 +89,7 @@ export default function IT_ConsultancyFeatures() {
         <HoverEffect items={services} />
 
         <div className="mt-12 text-center">
-          <Link
+          <LinkWithLoading
             href="/contact"
             className="group inline-flex items-center text-lg font-medium text-[#eccc68] hover:text-white"
           >
@@ -97,7 +98,7 @@ export default function IT_ConsultancyFeatures() {
               <ArrowLeft className="ml-2 h-5 w-5 transition-transform group-hover:-translate-x-1 hover:bg-white" />
             ) : (
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 hover:bg-white" />
-            )}{" "}          </Link>
+            )}{" "}          </LinkWithLoading>
         </div>
       </div>
          

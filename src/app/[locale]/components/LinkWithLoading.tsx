@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
+import { useLocalePath } from "@/utils/localPath";
 
 interface LinkWithLoadingProps extends LinkProps {
   className?: string;
@@ -34,7 +35,7 @@ export default function LinkWithLoading({
       onClick(e);
     }
   };
-
+  const localePath = useLocalePath();
   useEffect(() => {
     // When route changes, dispatch navigation end events
     const handleRouteComplete = () => {
@@ -49,7 +50,7 @@ export default function LinkWithLoading({
   }, []);
 
   return (
-    <Link href={href} {...props} onClick={handleClick}>
+    <Link href={localePath(href as string)} {...props} onClick={handleClick}>
       {children}
     </Link>
   );

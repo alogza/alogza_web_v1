@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Instagram, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 import LinkWithLoading from "./LinkWithLoading";
-
+import { useLocalePath } from "@/utils/localPath";
 interface FooterContent {
   sections: {
     homepage: string;
@@ -32,6 +32,7 @@ interface FooterContent {
 }
 
 export default function Footer({ footerContent }: { footerContent: FooterContent }) {
+  const localePath = useLocalePath();
   const footerLinks = [
     {
       title: footerContent.sections.homepage,
@@ -40,7 +41,7 @@ export default function Footer({ footerContent }: { footerContent: FooterContent
     {
       title: footerContent.sections.services,
       links: [
-        { name: footerContent.links.mobileApp, href: "/services/mobileapp" },
+        { name: footerContent.links.mobileApp, href: ("/services/mobileapp") },
         { name: footerContent.links.modernWeb, href: "/services/website" },
         { name: footerContent.links.aiApps, href: "/services/ai" },
         { name: footerContent.links.gameDev, href: "/services/game" },
