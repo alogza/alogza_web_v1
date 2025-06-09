@@ -121,7 +121,7 @@ function ProjectPageContent({ params }: { params: Promise<{ uid: string }> }) {
       <div>
         <ProjectHero
           header={"projectsPage.ai_chatbot_portal.title"}
-          scr={"/projects/chatbot/Header.png"}
+          scr={"/projects/alogzachatbot.png"}
         ></ProjectHero>
         <ProjectSlides
           image={[
@@ -140,7 +140,7 @@ function ProjectPageContent({ params }: { params: Promise<{ uid: string }> }) {
                 "projectsPage.ai_chatbot_portal.features.model_selection.title",
               description:
                 "projectsPage.ai_chatbot_portal.features.model_selection.desc",
-              imageUrl: "/projects/chatbot/project1.png",
+              imageUrl: "/projects/chatbot/Project1.png",
               imageAlt: "",
               imagePosition: i18n.language === "en" ? "left" : "right",
             },
@@ -149,7 +149,7 @@ function ProjectPageContent({ params }: { params: Promise<{ uid: string }> }) {
                 "projectsPage.ai_chatbot_portal.features.prompt_generator.title",
               description:
                 "projectsPage.ai_chatbot_portal.features.prompt_generator.desc",
-              imageUrl: "/projects/chatbot/project3.png",
+              imageUrl: "/projects/chatbot/Project3.png",
               imageAlt: "",
               imagePosition: i18n.language === "en" ? "right" : "left",
             },
@@ -158,7 +158,7 @@ function ProjectPageContent({ params }: { params: Promise<{ uid: string }> }) {
                 "projectsPage.ai_chatbot_portal.features.conversation_access.title",
               description:
                 "projectsPage.ai_chatbot_portal.features.conversation_access.desc",
-              imageUrl: "/projects/chatbot/project4.png",
+              imageUrl: "/projects/chatbot/Project4.png",
               imageAlt: "",
               imagePosition: i18n.language === "en" ? "left" : "right",
             },
@@ -167,7 +167,7 @@ function ProjectPageContent({ params }: { params: Promise<{ uid: string }> }) {
                 "projectsPage.ai_chatbot_portal.features.token_tracking.title",
               description:
                 "projectsPage.ai_chatbot_portal.features.token_tracking.desc",
-              imageUrl: "/projects/chatbot/project5.png",
+              imageUrl: "/projects/chatbot/Project5.png",
               imageAlt: "",
               imagePosition: i18n.language === "en" ? "right" : "left",
             },

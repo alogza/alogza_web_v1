@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import LinkWithLoading from "./LinkWithLoading";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "./LanguageChanger";
+import { getLocalePath } from "@/utils/getLocalePath";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -81,7 +82,7 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-100 bg-black/10 backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between p-4">
-          <LinkWithLoading href="/" className="flex items-center">
+          <LinkWithLoading href={getLocalePath(currentLocale, "/")} className="flex items-center">
             <div className="text-2xl font-bold text-[#eccc68]">
               <AlogzaLogo className="z-10 w-40 cursor-pointer" size={40} />
             </div>

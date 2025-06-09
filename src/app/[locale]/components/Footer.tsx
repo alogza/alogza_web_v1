@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Instagram, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 import LinkWithLoading from "./LinkWithLoading";
 import { getLocalePath } from "@/utils/getLocalePath";
+import { AlogzaLogo } from "./AlogzaLogo";
 
 interface FooterContent {
   sections: {
@@ -117,13 +118,8 @@ export default function Footer({ footerContent, locale }: { footerContent: Foote
           {/* Logo */}
           <div className="mb-6 md:mb-0">
             <LinkWithLoading href={getLocalePath(locale, "/")} className="inline-block">
-              <Image
-                src="/labels/logo_white.png"
-                alt="ALOGZA"
-                width={120}
-                height={40}
-                className="h-8 w-auto"
-              />
+            <AlogzaLogo size={40} />
+
             </LinkWithLoading>
           </div>
 
