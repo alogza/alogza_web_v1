@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Instagram, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 import LinkWithLoading from "./LinkWithLoading";
 import { getLocalePath } from "@/utils/getLocalePath";
