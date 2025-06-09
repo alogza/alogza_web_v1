@@ -50,6 +50,31 @@ export default function LanguageChanger() {
     return `/${segments.join("/")}`;
   }
 
+  const handleLanguageChange = async (locale) => {
+    try {
+      // Set cookie for next-i18n-router
+      const days = 30;
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      const expires = date.toUTCString();
+      const isProd = typeof window !== "undefined" && window.location.hostname.endsWith("alogza.com");
+      const domain = isProd ? ";domain=.alogza.com" : "";
+      document.cookie = `NEXT_LOCALE=${locale};expires=${expires};path=/${domain}`;
+
+      // Change language first
+      await i18n.changeLanguage(locale);
+
+      // Then update the path
+      const newPath = getPathWithLocale(currentPathname, locale);
+      router.push(newPath);
+      setIsOpen(false);
+    } catch (error) {
+      console.error("Error changing language:", error);
+      // Fallback to default locale if there's an error
+      router.push(`/${i18nConfig.defaultLocale}`);
+    }
+  };
+
   if (!mounted) {
     return null;
   }
@@ -69,22 +94,7 @@ export default function LanguageChanger() {
           {i18nConfig.locales.map((locale) => (
             <button
               key={locale}
-              onClick={() => {
-                // Set cookie for next-i18n-router
-                const days = 30;
-                const date = new Date();
-                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-                const expires = date.toUTCString();
-                const isProd = typeof window !== "undefined" && window.location.hostname.endsWith("alogza.com");
-                const domain = isProd ? ";domain=.alogza.com" : "";
-                document.cookie = `NEXT_LOCALE=${locale};expires=${expires};path=/${domain}`;
-                
-                // Change language and update path
-                i18n.changeLanguage(locale);
-                const newPath = getPathWithLocale(currentPathname, locale);
-                router.push(newPath);
-                setIsOpen(false);
-              }}
+              onClick={() => handleLanguageChange(locale)}
               className={`flex w-full items-center space-x-2 rounded-md px-3 py-2 text-sm transition ${locale === currentLocale ? "bg-amber-500/10 text-amber-500" : "text-white hover:bg-white/10"}`}
               disabled={locale === currentLocale}
             >
