@@ -31,9 +31,23 @@ export default function LanguageChanger() {
   }, []);
 
   function getPathWithLocale(pathname, locale) {
-    const segments = pathname.split("/");
-    segments[1] = locale;
-    return segments.join("/") || "/";
+    // Handle root path
+    if (pathname === "/" || pathname === "/ar" || pathname === "/en") {
+      return `/${locale}`;
+    }
+
+    // Split the path and ensure we have at least 2 segments
+    const segments = pathname.split("/").filter(Boolean);
+    
+    // If the first segment is a locale, replace it
+    if (i18nConfig.locales.includes(segments[0])) {
+      segments[0] = locale;
+    } else {
+      // If no locale in path, add it at the beginning
+      segments.unshift(locale);
+    }
+
+    return `/${segments.join("/")}`;
   }
 
   if (!mounted) {
@@ -56,6 +70,16 @@ export default function LanguageChanger() {
             <button
               key={locale}
               onClick={() => {
+                // Set cookie for next-i18n-router
+                const days = 30;
+                const date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                const expires = date.toUTCString();
+                const isProd = typeof window !== "undefined" && window.location.hostname.endsWith("alogza.com");
+                const domain = isProd ? ";domain=.alogza.com" : "";
+                document.cookie = `NEXT_LOCALE=${locale};expires=${expires};path=/${domain}`;
+                
+                // Change language and update path
                 i18n.changeLanguage(locale);
                 const newPath = getPathWithLocale(currentPathname, locale);
                 router.push(newPath);
