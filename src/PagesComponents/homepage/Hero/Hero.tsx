@@ -35,8 +35,7 @@ export const Hero = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
- };
-
+  };
 
   useGSAP(
     () => {
@@ -97,8 +96,8 @@ export const Hero = () => {
         <div
           className={`relative ${
             i18n.language === "en"
-              ? "-right-120 -top-10 max-[1180px]:-right-80 max-md:-right-0 max-md:-top-40 2xl:-right-110"
-              : "-left-120 -top-10 max-[1180px]:-left-80 max-md:-left-0 max-md:top-40 2xl:-left-110 "
+              ? "-right-120 -top-10 max-[1180px]:-right-80 max-md:-right-0 max-md:-top-40 lg:-right-110 2xl:-right-190"
+              : "-left-120 -top-10 max-[1180px]:-left-80 max-md:-left-0 max-md:top-40 lg:-left-110 2xl:-left-190 "
           }  h-full  max-sm:relative max-sm:h-[80vh] max-sm:top-[55vh] `}
           style={{ maxWidth: "1200px" }}
         >
