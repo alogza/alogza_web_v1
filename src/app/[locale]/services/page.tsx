@@ -6,6 +6,7 @@ import { PinContainer } from "../components/ui/3d-pin";
 import { Suspense } from "react";
 import LoadingOverlay from "../components/LoadingOverlay";
 import { useLocalePath } from "@/utils/localPath";
+import StructuredData from "@/components/StructuredData";
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
@@ -70,6 +71,20 @@ export default function ProjectsPage() {
 
   return (
     <>
+          <StructuredData 
+    type="ServicePage" 
+    pageData={{
+        name: "Services - Alogza",
+        description: "Explore Alogza’s full suite of digital services, including website development, mobile app design, AI integration, Game development, branding, and UI/UX solutions tailored to your business.",
+        url: "https://www.alogza.com/services",
+        breadcrumb: [
+            { name: "Home", item: "https://www.alogza.com" },
+            { name: "Services", item: "https://www.alogza.com/services" },
+            // { name: "Website Development", item: "https://www.alogza.com/services/website" }
+        ]
+    }} 
+/>
+
       <Suspense fallback={<LoadingOverlay />}>
         <HeroHeader
           backgroundImage="/images/YellowBG.png"

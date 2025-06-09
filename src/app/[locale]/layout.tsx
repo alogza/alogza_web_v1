@@ -9,6 +9,7 @@ import { SuspenseLayout } from "./components/SuspenseLayout";
 import { Suspense } from "react";
 import { ReactNode } from "react";
 import { getHTMLTextDir } from "@/utils/getHTMLTextDir";
+import StructuredData from "@/components/StructuredData";
 
 
 const alogza = localFont({
@@ -26,17 +27,25 @@ const inter = localFont({
 
 const namespaces = ["content"];
 
-export const metadata ={
-  title:"Alogza Official",
-  icon:"/logo.png"
-  
-}
 
 import LoadingOverlay from "./components/LoadingOverlay";
+import { Metadata } from "next";
 interface LocalLayoutProps {
   children: ReactNode;
   params: { locale: string };
 }
+
+export const metadata: Metadata ={
+  title:{
+    default:"Alogza Official",
+    template:"%s - Alogza Official"
+  },
+  description:"Alogza is a cutting-edge tech startup offering professional web development, mobile app creation, AI solutions, and digital design services to help businesses thrive in the digital era.",
+  twitter:{
+    card:"summary_large_image"
+  }
+}
+
 const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
   const { locale } = await params;
   const { t, resources } = await initTranslations(locale, namespaces);
@@ -46,6 +55,10 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
       dir={getHTMLTextDir(locale)}
       className={`${inter.variable} ${alogza.variable} font-inter`}
     >
+      <head>
+        <StructuredData type="Organization" />
+        <StructuredData type="WebSite" />
+      </head>
       <body className="overflow-x-hidden bg-black text-white">
         <Suspense>
           <LoadingOverlay />

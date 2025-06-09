@@ -4,12 +4,22 @@ import { InfoCard } from "../components/VnM";
 import HeroHeader from "../components/HeroHeader";
 import { useTranslation } from "react-i18next";
 import SuspenseWrapper from "../components/SuspenseWrapper";
+import StructuredData from "@/components/StructuredData";
+
 
 const AboutUsPage = () => {
   const { t } = useTranslation();
 
   return (
     <SuspenseWrapper>
+      <StructuredData 
+    type="AboutPage" 
+    pageData={{
+        name: "About Alogza - Our Story and Mission",
+        description: "Learn about Alogza's journey, our vision and mission, and the team behind our innovative digital solutions.",
+        url: "https://www.alogza.com/aboutus"
+    }} 
+/>
       <main>
         <HeroHeader
           backgroundImage="/images/YellowBG.png"

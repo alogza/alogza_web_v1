@@ -6,12 +6,27 @@ import HeroHeader from "@/app/[locale]/components/HeroHeader";
 import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
 import LoadingOverlay from "../../components/LoadingOverlay";
+import StructuredData from "@/components/StructuredData";
 
 export default function MobileAppPage() {
   const { t } = useTranslation();
 
   return (
     <>
+    <StructuredData 
+    type="ServicePage" 
+    pageData={{
+        name: "IT Consultancy Services - Alogza",
+        description: "Expert IT consultancy services offering strategic guidance, digital transformation, system integration, and tech-driven business solutions.",
+        url: "https://www.alogza.com/services/itconsultancy",
+        breadcrumb: [
+            { name: "Home", item: "https://www.alogza.com" },
+            { name: "Services", item: "https://www.alogza.com/services" },
+            { name: "IT Consultancy", item: "https://www.alogza.com/services/itconsultancy" }
+        ]
+    }} 
+/>
+
       <Suspense fallback={<LoadingOverlay />}>
         <HeroHeader
           backgroundImage="/images/YellowBG.png"

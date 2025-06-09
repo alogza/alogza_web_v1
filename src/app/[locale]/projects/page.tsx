@@ -12,9 +12,11 @@ import HeroHeader from "../components/HeroHeader";
 import LinkWithLoading from "../components/LinkWithLoading";
 import { useTranslation } from "react-i18next";
 import SuspenseWrapper from "../components/SuspenseWrapper";
+import StructuredData from "@/components/StructuredData";
 
 // Separate component for the filtered content
 function FilteredProjects() {
+
   const projectCategories = useProjectCategories();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -125,6 +127,19 @@ function FilteredProjects() {
 
   return (
     <>
+    <StructuredData 
+    type="ProjectPage" 
+    pageData={{
+        name: "AI Chatbot Project - Alogza",
+        description: "Discover Alogza’s portfolio of innovative projects, showcasing custom websites, mobile apps, AI solutions, game dev and creative digital experiences built for real-world impact.",
+        url: "https://www.alogza.com/projects",
+        breadcrumb: [
+            { name: "Home", item: "https://www.alogza.com" },
+            { name: "Projects", item: "https://www.alogza.com/projects" },
+            // { name: "AI Chatbot", item: "https://www.alogza.com/projects/chatbot" }
+        ]
+    }} 
+/>
       <section className="bg-black/90 sticky top-0 z-30 border-b border-white/10 backdrop-blur-sm">
         <div className="container mx-auto py-4 px-4">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
