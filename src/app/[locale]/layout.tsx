@@ -63,7 +63,7 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
               <ViewCanvas></ViewCanvas>
             </SuspenseLayout>
           </main>
-          <Footer footerContent={t("footer", { returnObjects: true })} />{" "}
+          <Footer footerContent={t("footer", { returnObjects: true })} locale={locale} />{" "}
         </TranslationsProvider>
       </body>
     </html>

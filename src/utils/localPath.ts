@@ -1,3 +1,4 @@
+"use client"
 // src/utils/localePath.ts
 import { usePathname } from "next/navigation";
 

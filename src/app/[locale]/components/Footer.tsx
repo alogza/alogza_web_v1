@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Instagram, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
 import LinkWithLoading from "./LinkWithLoading";
-import { useLocalePath } from "@/utils/localPath";
+import { getLocalePath } from "@/utils/getLocalePath";
+
 interface FooterContent {
   sections: {
     homepage: string;
@@ -31,25 +32,24 @@ interface FooterContent {
   };
 }
 
-export default function Footer({ footerContent }: { footerContent: FooterContent }) {
-  const localePath = useLocalePath();
+export default function Footer({ footerContent, locale }: { footerContent: FooterContent, locale: string }) {
   const footerLinks = [
     {
       title: footerContent.sections.homepage,
-      links: [{ name: footerContent.links.home, href: "/" }],
+      links: [{ name: footerContent.links.home, href: getLocalePath(locale, "/") }],
     },
     {
       title: footerContent.sections.services,
       links: [
-        { name: footerContent.links.mobileApp, href: ("/services/mobileapp") },
-        { name: footerContent.links.modernWeb, href: "/services/website" },
-        { name: footerContent.links.aiApps, href: "/services/ai" },
-        { name: footerContent.links.gameDev, href: "/services/game" },
+        { name: footerContent.links.mobileApp, href: getLocalePath(locale, "/services/mobileapp") },
+        { name: footerContent.links.modernWeb, href: getLocalePath(locale, "/services/website") },
+        { name: footerContent.links.aiApps, href: getLocalePath(locale, "/services/ai") },
+        { name: footerContent.links.gameDev, href: getLocalePath(locale, "/services/game") },
         {
           name: footerContent.links.itConsultancy,
-          href: "/services/itconsultancy",
+          href: getLocalePath(locale, "/services/itconsultancy"),
         },
-        { name: footerContent.links.uxUiDesign, href: "/services/design" },
+        { name: footerContent.links.uxUiDesign, href: getLocalePath(locale, "/services/design") },
       ],
     },
     {
@@ -57,27 +57,27 @@ export default function Footer({ footerContent }: { footerContent: FooterContent
       links: [
         {
           name: footerContent.links.aiProjects,
-          href: "/projects?categories=ai",
+          href: getLocalePath(locale, "/projects?categories=ai"),
         },
         {
           name: footerContent.links.webProjects,
-          href: "/projects?categories=web-app",
+          href: getLocalePath(locale, "/projects?categories=web-app"),
         },
         {
           name: footerContent.links.appProjects,
-          href: "/projects?categories=web-app",
+          href: getLocalePath(locale, "/projects?categories=web-app"),
         },
         {
           name: footerContent.links.gameProjects,
-          href: "/projects?categories=game-dev",
+          href: getLocalePath(locale, "/projects?categories=game-dev"),
         },
       ],
     },
     {
       title: footerContent.sections.company,
       links: [
-        { name: footerContent.links.aboutUs, href: "/aboutus" },
-        { name: footerContent.links.contactUs, href: "/contact" },
+        { name: footerContent.links.aboutUs, href: getLocalePath(locale, "/aboutus") },
+        { name: footerContent.links.contactUs, href: getLocalePath(locale, "/contact") },
       ],
     },
   ];
@@ -116,7 +116,7 @@ export default function Footer({ footerContent }: { footerContent: FooterContent
         <div className="flex flex-col justify-between space-y-8 md:flex-row md:space-y-0">
           {/* Logo */}
           <div className="mb-6 md:mb-0">
-            <LinkWithLoading href="/" className="inline-block">
+            <LinkWithLoading href={getLocalePath(locale, "/")} className="inline-block">
               <Image
                 src="/labels/logo_white.png"
                 alt="ALOGZA"

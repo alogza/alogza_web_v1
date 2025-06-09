@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { HoverEffect } from "@/app/[locale]/components/ui/card-hover-effect";
 import { useTranslation } from "react-i18next";
-import Link from "next/link";
 import LinkWithLoading from "../../components/LinkWithLoading";
 
 export default function GameFeatures() {
