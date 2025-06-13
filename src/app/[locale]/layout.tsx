@@ -10,7 +10,8 @@ import { Suspense } from "react";
 import { ReactNode } from "react";
 import { getHTMLTextDir } from "@/utils/getHTMLTextDir";
 import StructuredData from "@/components/StructuredData";
-
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const alogza = localFont({
   src: "../../../public/fonts/Azonix.otf",
@@ -55,6 +56,8 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
       dir={getHTMLTextDir(locale)}
       className={`${inter.variable} ${alogza.variable} font-inter`}
     >
+      <Analytics/>
+      <SpeedInsights/>
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
 
