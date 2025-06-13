@@ -56,6 +56,8 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
       className={`${inter.variable} ${alogza.variable} font-inter`}
     >
       <head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
         <StructuredData type="Organization" />
         <StructuredData type="WebSite" />
       </head>
