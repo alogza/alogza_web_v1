@@ -56,8 +56,7 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
       dir={getHTMLTextDir(locale)}
       className={`${inter.variable} ${alogza.variable} font-inter`}
     >
-      <Analytics/>
-      <SpeedInsights/>
+
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
 
@@ -78,6 +77,8 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
           <main>
             <SuspenseLayout>
               {children}
+              <Analytics/>
+              <SpeedInsights/>
               <ViewCanvas></ViewCanvas>
             </SuspenseLayout>
           </main>
