@@ -42,8 +42,39 @@ export const metadata: Metadata ={
     template:"%s - Alogza Official"
   },
   description:"Alogza is a cutting-edge tech startup offering professional web development, mobile app creation, AI solutions, and digital design services to help businesses thrive in the digital era.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/icon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512x512.png', sizes: '512x512', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/safari-pinned-tab.svg',
+        color: '#000000'
+      }
+    ]
+  },
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Alogza'
+  },
+  applicationName: 'Alogza',
+  formatDetection: {
+    telephone: false
+  },
   twitter:{
-    card:"summary_large_image"
+    card:"summary_large_image",
+    images: ['/icon.png']
   }
 }
 
@@ -59,6 +90,10 @@ const LocalLayout = async ({ children, params }: LocalLayoutProps) => {
 
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="/icon.png" type="image/png" />
+      <link rel="apple-touch-icon" href="/apple-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <meta name="theme-color" content="#000000" />
 
         <StructuredData type="Organization" />
         <StructuredData type="WebSite" />
